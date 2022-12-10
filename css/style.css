@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 5vw 0 10vw;
+  justify-content: space-between;
+  background-color: #000;
+}
+.header__image {
+  height: 15vh;
+}
+.header__nav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 3vh;
+  transition: all 0.4s ease;
+}
+.header__nav a:hover {
+  color: #d4ff55;
+}
+
+.main {
+  height: 60vh;
+  width: 100%;
+}
+
+.wrapper, .slide {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+}
+
+.slide {
+  overflow: hidden;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.slide .image {
+  width: 100%;
+  height: 100%;
+  object-fit: inherit;
+}
+
+.slide .image-data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+}
+
+.image-data span.text {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.image-data h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 25px;
+  color: #333;
+  text-decoration: none;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+
+a.button:hover {
+  background-color: #d4ff55;
+  color: #000;
+}
+
+.nav-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.nav-btn::before,
+.nav-btn::after {
+  font-size: 16px;
+  color: #fff;
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+}
+
+.swiper-pagination-bullet-active {
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  background-color: #d4ff55;
+}
+
+.footer {
+  background-color: #000;
+  height: 25vh;
+  display: flex;
+  padding: 0 5vw;
+}
+.footer__address {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  padding: 0 5vw;
+}
+.footer__address-icon {
+  height: 6vh;
+}
+.footer__address-container {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
