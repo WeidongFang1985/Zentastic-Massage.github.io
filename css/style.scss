@@ -11,9 +11,13 @@ body {
   padding: 0 10vw;
   justify-content: space-between;
   background-color: #000;
+  height: 15vh;
 
   &__image {
-    height: 15vh;
+    height: 28vh;
+    position: relative;
+    z-index: 10000;
+    top: 6vh;
   }
 
   &__nav a {
@@ -21,7 +25,7 @@ body {
     text-decoration: none;
     color: #fff;
     margin-right: 3vh;
-    transition: all 0.4s ease;
+    transition: all 0.5s ease;
     &:hover {
       color: $color;
     }
@@ -30,15 +34,14 @@ body {
 
 //main
 .main {
-  padding: 5vh 0;
-  min-height: 40vh;
-  width: 95%;
+  min-height: 50vh;
+  width: 100%;
 }
 
 .wrapper,.slide {
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
 }
 
 .slide {
