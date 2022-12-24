@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  max-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5vh 16vw;
+}
+@media screen and (max-width: 1300px) {
+  .header {
+    padding: 5vh 10vw;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .header {
+    padding: 5vh 10vw;
+  }
+  .header__logo-image {
+    margin-right: 100px;
+  }
+}
+.header__logo-image {
+  height: 15vh;
+}
+.header__menu-item a:hover {
+  color: black;
+}
+.header__menu-item a:hover i {
+  color: black;
+}
+.header__menu-item i {
+  color: rgb(119, 119, 119);
+  margin-right: 3px;
+}
+.header__menu ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.header__menu ul .middle-items::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 3px;
+  right: 8px;
+  background-color: rgb(119, 119, 119);
+}
+.header__menu ul a {
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(119, 119, 119);
+  transition: all 0.4s ease;
+}
+
+/*# sourceMappingURL=style.css.map */
