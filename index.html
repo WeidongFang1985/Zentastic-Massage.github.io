@@ -9,6 +9,9 @@
     <meta name="description" content="Zentastic massage is situated in Rosebud, on the beautiful Mornington Peninsula. Deep Tissue Massage, Relaxation Massage, Full Body Massage, Hot Stone Therapy, Foot Relaxology.">
     <!--    add Font Awesome js-->
     <script src="https://kit.fontawesome.com/877ad67c96.js" crossorigin="anonymous"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="css/pagination.css">
 </head>
 <body>
     <header class="header" id="header">
@@ -42,5 +45,64 @@
         </div>
     </header>
 
+    <!-- Swiper -->
+    <section class="swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img class="image" src="images/massage1.jpg" alt="back-massage">
+                <div class="banner__title">
+                    <h2>THE WARMTH OF</h2>
+                    <h2>HANDS CAN CURE</h2>
+                    <p>Massage enhances general health and well-being, increasing circulation to oxygenate the tissues,</p>
+                    <p>and increase lymphatic drainage to remove built up and unwanted toxins.</p>
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img class="image" src="images/massage3.jpg" alt="head-massage">
+                <div class="banner__title">
+                    <h2>FEET REFLEXOLOGY</h2>
+                    <h2>SUBTLE YET POWERFUL</h2>
+                    <p>Based on the principle that certain parts of the body reflect the whole. Reflex points,</p>
+                    <p>found in all parts of the body, respond to pressure, stimulating the body's own natural healing process.</p>
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img class="image" src="images/massage2.jpg" alt="foot-massage">
+                <div class="banner__title">
+                    <h2>RELIEVE STRESS</h2>
+                    <h2>INCREASE ENERGY</h2>
+                    <p>We offer a wide selection of treatment including Remedial Deep Tissue Body Massage, Hot Stone Therapy</p>
+                    <p>Relaxation Massage Therapy and Reflexology Foot Massage Therapy.</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination "></div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 </html>
